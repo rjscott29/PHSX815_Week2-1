@@ -1,5 +1,6 @@
 #! /usr/bin/env python
 
+import math
 import numpy as np
 
 #################
@@ -63,6 +64,6 @@ class Random:
       while R <= 0.:
         R = self.rand()
 
-      X = -log(R)/beta
+      X = -math.log(R)/beta
 
       return X
