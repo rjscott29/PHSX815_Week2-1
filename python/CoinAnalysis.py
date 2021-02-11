@@ -79,7 +79,7 @@ if __name__ == "__main__":
                     LLR += math.log( p1/p0 )
                 else:
                     LLR += math.log( (1.-p1)/(1.-p0) )
-
+                    
             if Npass < Npass_min:
                 Npass_min = Npass
             if Npass > Npass_max:
@@ -118,7 +118,7 @@ if __name__ == "__main__":
                 LogLikeRatio1.append(LLR)
 
     title = str(Ntoss) +  " tosses / experiment"
-                
+    
     # make Npass figure
     plt.figure()
     plt.hist(Npass0, Ntoss+1, density=True, facecolor='b', alpha=0.5, label="assuming $\\mathbb{H}_0$")
