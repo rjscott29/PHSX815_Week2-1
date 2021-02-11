@@ -28,4 +28,4 @@ dependencies (and any executables that need them) from your `Makefile`
 ### Usage
 
 All of the executables (and Python programs) can be called from the
-command line with the e`-h` or `--help` flag, which will print the options
+command line with the `-h` or `--help` flag, which will print the options
